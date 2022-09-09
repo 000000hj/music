@@ -1,0 +1,271 @@
+
+*{
+    margin:0;padding:0;border:0;outline:0;font-size:100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+   
+}
+
+body{
+    
+    margin: auto;
+    width: 540px;
+    height: 960px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+   
+    
+}
+nav{ 
+   margin: 0 auto;
+   
+}
+
+ul{
+    list-style: none;
+}
+
+/* 헤드라인 */
+div.head{
+  display: flex;
+  justify-content:end;
+  align-items: center;
+  margin-bottom:30px;
+  margin-top: 30px;
+  
+}
+
+/* 메뉴버튼 */
+i {
+    font-size: 30px;
+    background-color:black;
+    background:linear-gradient(#9198e5,skyblue);
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent
+}
+
+
+/* 사이드 메뉴 */
+.sidebar
+{
+    position: relative;
+}
+.fa-x{
+  
+    font-size: 20px;
+    margin-left:80%;
+    margin-top:15%;
+    cursor: pointer;
+}
+.fa-bars{
+    cursor: pointer;
+}
+.search{cursor: pointer;}
+
+.menu{
+    position: absolute;
+    display: block;
+    width: 0px;
+    background: rgb(30, 29, 29);
+    opacity: 95%;
+    left: 0;
+    top:0;
+    border-radius: 10px;
+    animation: mymove 1s;
+    transition:all 0.5s ease;
+    z-index: 0;
+    overflow-x: hidden;
+    white-space: nowrap
+      
+}
+
+
+.menu li{
+    text-align: center;
+    padding-top: 10px;
+    display: block; 
+    
+}
+.profile{
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+.subscribe{
+    margin-bottom:50px;
+}
+.menu a{
+    text-decoration: none;
+    font-weight: 600;
+    color:#9efaff;
+   
+}
+
+
+
+/* 어플제목 */
+.name{
+    margin: 0 auto 0 auto;
+    font-size: 40px;
+    font-weight: 800; 
+    background-color:linear-gradient( #ffffff, #9198e5);
+    background: linear-gradient( #9efaff, #afeeff,rgb(228, 165, 244) 85%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color:transparent;
+   cursor: pointer;
+}
+:hover.name{
+   -webkit-animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow{
+from{
+    text-shadow:0 0 10px #d2d6ff,0 0 10px rgb(255, 216, 216),0 0 20px rgb(4, 255, 230);
+}
+to{
+    text-shadow:0 0 10px #fee3ff,0 0 10px rgb(248, 226, 255),0 0 20px rgb(132, 123, 255);
+}
+}
+
+.isalbumimg{
+   background: url(Images/album1.png)no-repeat;
+   background-size: 150px;
+   background-position: center;
+   background-color: rgb(84, 78, 78);
+   
+   
+}
+
+
+/* 재생중인 음악 정보 */
+div.isplaying-music{
+     border:1px solid rgb(177, 189, 232); 
+    display: flex;
+
+
+}
+.isplaying-music .isalbumimg{
+    border: 1px solid rgb(177, 189, 232); 
+    width:200px;
+    height:200px;
+    
+    
+}
+.isplaying-music div{
+    width:auto;
+    
+   
+}
+.musicwrap{
+  
+    border:1px solid rgb(41, 44, 55); 
+    width: 44px;
+    text-align: center;
+  
+}
+.musicopt ul{
+    padding-top: 20px;
+    padding-bottom:30px;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    
+    
+} 
+.musicopt ul li{  
+  margin:auto ;
+}
+.musicopt img{
+width:20px;
+height:20px;
+}
+.isplaying-music ul{
+   font-size: 15px;
+   margin: auto 40px;
+   font-style:italic;
+   
+}
+
+.isplaying-music ul .istitle{
+   
+    margin-top:10px;
+}
+.isplaying-music ul .iscomposer{
+    font-size: 11px;
+   
+}
+
+
+/* 재생옵션 */
+
+#audioplayer{
+    margin: 0;
+    padding:0;
+	width: 340px; 
+	height: 40px;
+    border:1px solid rgb(137, 127, 127);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+#timeline{
+	width: 300px;
+	height: 5px;
+	border-radius: 10px;
+	background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+  
+}
+#playhead{
+	width: 10px;
+	height: 10px;
+	border-radius:20%;
+	background: rgb(144, 99, 255);
+
+}
+
+
+
+
+/* 플레이리스트 */
+div.playlist{
+    margin-top: 50px;
+  
+}
+ul.playlist ul{
+    border: 1px solid rgb(88, 126, 180);
+    height:100px;
+       
+}
+
+.playlist li{
+    display: flex;
+    margin-top: 10px;
+
+}
+.playlist li.title
+{
+    margin-top:25px ;
+    margin-left: 50px;
+    color: rgb(210, 238, 255);
+}
+.playlist li.composer{
+    margin-left: 50px;
+    font-size: 13px;
+    color: rgb(203, 195, 223);
+}
+.playlist li div{
+    text-align: center;
+    width: 440px;
+    height:100px;
+}
+.playlist li .albumimg{
+    width:100px;
+    height:100px;
+    border:1px solid rgb(124, 108, 126);
+    
+}
+

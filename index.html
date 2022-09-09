@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8a9397e52f.js" crossorigin="anonymous"></script>
+    <link rel="text/javascript" href="main.js">
+    <link rel="text/javascript" href="list.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Hyeon Music</title>
+</head>
+<body>
+    <nav>
+        <!-- 헤드라인 -->
+        <div class="head"> 
+            <Section class="sidebar">
+                <i class="fa-solid fa-bars"></i>
+            <div class="menu" >
+                
+                <ul>
+                    <i class="fa-solid fa-x"></i>
+                    <li class="profile" ><a href="">프로필</a></li>
+                    <li><a href="">내 보관함</a></li>
+                    <li><a href="">설정</a></li>
+                    <li class="subscribe"><a href="">결제관리</a></li>
+                </ul>
+            </div>
+            
+        </Section>
+
+            <h1 class="name"> <img class="logo" src="Images/headphone.png" width="40" height="35" alt=""> HYEON MUSIC</h1>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div> 
+        </div>
+        
+
+            <!-- 플레이 중인 음악정보 -->
+        <div class ="isplaying-music" id="isplayingmusic">
+            <div class="isalbumimg"></div>
+            <div>
+                  <!-- 플레이 옵션  -->
+                  
+                <div class="musicwrap">
+                    <audio id="music" src="music/1.mp3">
+                    </audio>
+                    <div  id="audioplayer">
+                    <div id="timeline" class="timeline">
+                        <div id="playhead" class="playhead"> </div>
+                    </div>
+                    </div>
+                    
+                    <div class="musicopt">  
+                        <ul>
+                        <li class="previous"> <img src="Images/previous1.png" alt="previous"></li>
+                        <li id="playBtn" class="play"><img src="Images/play.png" alt=""></li>
+                        <li class="pause"><img src="Images/pause4.png" alt=""></li>
+                        <li class="next"><img src="Images/1.png" alt=""></li>
+                        <li class="repeat"><img src="Images/repeat.png" alt=""></li>
+                        <li  class="shuffle"><img src="Images/shuffle.png" alt=""></li>
+                        </ul>
+                    </div>               
+                </div>
+                
+                
+                
+                <ul>
+                <li class="istitle" id="istitle">곡제목</li>
+                <li class="iscomposer">작곡가</li>
+                </ul>   
+                      
+                
+            </div>    
+                   
+        </div>
+
+    </nav>
+    <!-- 콘텐츠 섹션 -->
+    <section class="content">
+        <div class="playlist"> 
+            <ul class="playlist">
+                <li>
+                    <div class="albumimg">앨범 이미지 </div>
+                    <div>
+                        <ul>
+                        <li class="title">곡제목1</li>
+                        <li class="composer">작곡가1</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="albumimg">앨범 이미지 </div>
+                    <div>
+                        <ul>
+                        <li class="title">곡제목2</li>
+                        <li class="composer">작곡가2</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="albumimg">앨범 이미지 </div>
+                    <div>
+                        <ul>
+                        <li class="title">곡제목3</li>
+                        <li class="composer">작곡가3</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="albumimg">앨범 이미지 </div>
+                    <div>
+                        <ul>
+                        <li class="title">곡제목4</li>
+                        <li class="composer">작곡가4</li>
+                        </ul>
+                    </div>
+                </li>   
+                <li>
+                    <div class="albumimg">앨범 이미지 </div>
+                    <div>
+                        <ul>
+                        <li class="title">곡제목5</li>
+                        <li class="composer">작곡가5</li>
+                        </ul>
+                    </div>
+                </li>     
+            </ul>
+        </div>
+    </section>
+    <script src="main.js"></script>
+    <script src="list.js"></script>
+</body>
+
+
+</html>
